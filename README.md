@@ -1,8 +1,15 @@
-# React + Vite
+# Puppy Pals
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Puppy Pals is a simple web application built with React that allows users to explore a list of adorable puppies and view detailed information about each puppy.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View a list of puppies with their names.
+- Click on a puppy's name to see more details, including age and email.
+- Enjoy a playful and user-friendly interface.
+
+## Technologies Used
+
+- React
+- JavaScript
+- CSS
