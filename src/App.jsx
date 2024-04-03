@@ -32,7 +32,8 @@ function App() {
         )}
         {puppies.map((puppy) => {
           return (
-            <p
+            <p 
+              className="puppy-name"
               onClick={() => {
                 setFeatPupId(puppy.id);
               }} //tracking Id via useState

@@ -51,4 +51,16 @@ h1 {
   font-weight: bold;
 }
 
+/* Added CSS for cursor effect */
+.puppy-name {
+  cursor: pointer; /* Change cursor to pointer when hovering over puppy names */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+
+}
+
+.puppy-name:hover {
+  color: #1f24af; /* Highlight color */
+  transform: scale(1.1); /* Grow in size on hover */
+}
+
 
