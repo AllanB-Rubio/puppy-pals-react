@@ -1,13 +1,22 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
+body {
+  background-image: url('https://wallpaper.dog/large/20529662.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-position: center; /* Center the background image */
+}
 
 h1 {
   font-family: 'Pacifico', cursive;
+  text-align: center; /* Center align the text */
+  padding: 20px 0; /* Add padding at the top and bottom */
+  margin-top: 0; /* Remove default margin from the top */
 }
 
 
@@ -22,7 +31,7 @@ h1 {
 }
 
 .card h2 {
-  color: #747ba5; /* Color of the title */
+  color: #353d6a; /* Color of the title */
 }
 .card h3 {
   color: #b14250; /* Color of the title */
