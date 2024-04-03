@@ -25,8 +25,8 @@ function App() {
             <h2>{featuredPup.name}</h2>
             <h3>Information: </h3>
             <ul>
-              <li>Age: {featuredPup.age}</li>
-              <li>Email: {featuredPup.email}</li>
+              <li><strong>Age: </strong>{featuredPup.age}</li>
+              <li><strong>Email: </strong>{featuredPup.email}</li>
             </ul>
           </div>
         )}

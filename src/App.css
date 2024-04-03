@@ -43,6 +43,7 @@ h1 {
 }
 
 .card ul li {
+  color: rgb(73, 25, 107);
   margin-bottom: 10px; /* Spacing between list items */
 }
 
