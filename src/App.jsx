@@ -6,46 +6,42 @@ import { puppyList } from "./data.js";
 
 function App() {
   const [puppies, setPuppies] = useState(puppyList);
-  console.log("puppyList:", puppies);
-
   // Set the default value to null. So, you can conditionally render an element in your JSX code.
-
-  // How do you set this Id?
   const [featPupId, setFeatPupId] = useState(null);
+
+  const featuredPup = puppies.find((pup) => pup.id === featPupId);
+  console.log(featuredPup);
+
+  // console.log("puppyList:", puppies);
 
   // {braces} allow the use of JS or escape into JS
   return (
     <>
+      <h1>Puppy Pals</h1>
       <div className="App">
-        {
-          // For each puppy, return a <p> tag with the puppy name rendered using .map
-          puppies.map((puppy) => {
-            const featuredPup = puppies.find((pup) => pup.id === featPupId);
-            console.log(featuredPup);
-
-            {
-              featPupId && (
-                <div> 
-                  <h2>{featuredPup.name}</h2> 
-                  <ul>
-                    <li>Age: {featuredPup.age}</li>
-                    <li>Email: {featuredPup.email}</li>
-                  </ul>
-                </div>
-              );
-            }
-            return (
-              <p
-                onClick={() => {
-                  setFeatPupId(puppy.id);
-                }} //tracking Id via useState
-                key={puppy.id}
-              >
-                {puppy.name}
-              </p>
-            );
-          })
-        }
+        {featPupId && (
+          <div className="card">
+            
+            <h2>{featuredPup.name}</h2>
+            <h3>Information: </h3>
+            <ul>
+              <li>Age: {featuredPup.age}</li>
+              <li>Email: {featuredPup.email}</li>
+            </ul>
+          </div>
+        )}
+        {puppies.map((puppy) => {
+          return (
+            <p
+              onClick={() => {
+                setFeatPupId(puppy.id);
+              }} //tracking Id via useState
+              key={puppy.id}
+            >
+              {puppy.name}
+            </p>
+          );
+        })}
       </div>
     </>
   );
